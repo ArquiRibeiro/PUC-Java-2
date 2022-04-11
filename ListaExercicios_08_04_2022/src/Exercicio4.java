@@ -4,13 +4,12 @@ public class Exercicio4 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		int habitante = 0, rendaBaixa = 0, filhos = 0, filhosTotal = 0;
+		int habitante = 1, rendaBaixa = 0, filhos = 0, filhosTotal = 0;
 		double salario = 1, salarioTotal = 0, maiorSalario = 1;
 	
 		System.out.printf("!Digitar um valor negativo para parar!\n\n");
 		
-		do {
-			habitante++;
+		do {			
 			System.out.printf("%d° HABITANTE", habitante);
 			System.out.print("\nSalario (Separar centavos com ','): ");
 			salario = sc.nextDouble();
@@ -30,9 +29,10 @@ public class Exercicio4 {
 					filhos = sc.nextInt();
 				}
 				while(filhos < 0);
-				
+								
 				salarioTotal += salario;
 				filhosTotal += filhos;
+				habitante++;
 			}
 			
 			else {
